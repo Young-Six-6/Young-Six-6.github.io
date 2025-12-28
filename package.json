@@ -10,7 +10,7 @@
     "dev": "valaxy",
     "rss": "valaxy rss",
     "serve": "vite preview",
-    "deploy": "npm run build:ssg && gh-pages --dist dist"
+    "deploy": "npm run build:ssg && gh-pages --clean --dist dist"
   },
   "dependencies": {
     "@waline/client": "3.4.1",
