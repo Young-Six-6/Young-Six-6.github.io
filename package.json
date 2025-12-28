@@ -1,0 +1,25 @@
+{
+  "name": "valaxy-blog",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:ssg",
+    "build:spa": "valaxy build",
+    "build:ssg": "valaxy build --ssg",
+    "dev": "valaxy",
+    "rss": "valaxy rss",
+    "serve": "vite preview",
+    "deploy": "npm run build:ssg && gh-pages --dist dist"
+  },
+  "dependencies": {
+    "@waline/client": "3.4.1",
+    "valaxy": "0.26.10",
+    "valaxy-addon-waline": "^0.2.1",
+    "valaxy-theme-yun": "0.26.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.9.3"
+  }
+}

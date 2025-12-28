@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    "types": [], 
+    "strict": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./types"] 
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": [
+    "site.config.ts",
+    "valaxy.config.ts",
+    "src/**/*",
+    "types/**/*" 
+  ]
+}
