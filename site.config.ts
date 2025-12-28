@@ -1,7 +1,7 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  url: 'https://young-six-6.github.io',
+  url: 'https://young-six-6.github.io/Young-Six-6/',
   lang: 'zh-CN',
   title: '小乌龟的6-Blog',
   subtitle: '', 
