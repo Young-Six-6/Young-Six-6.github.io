@@ -17,7 +17,7 @@ export default defineSiteConfig({
   social: [
     {
       name: 'GitHub',
-      link: 'https://github.com/Young-Six-6',
+      link: 'https://young-six-6.github.io/Young-Six-6/',
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
