@@ -19,7 +19,6 @@ type ExtendedWalineOptions = WalineOptions & {
  * User Config
  */
 export default defineValaxyConfig<UserThemeConfig>({
-
   theme: 'yun',
 
   themeConfig: {
@@ -56,19 +55,20 @@ export default defineValaxyConfig<UserThemeConfig>({
         icp: 'N/A',
       },
     },
-  },
+  }, // 关键1：闭合 themeConfig 大括号（移出 unocss/addons）
 
+  // 关键2：unocss 移到根级别（与 theme 同级，非 themeConfig 子属性）
   unocss: { safelist },
   addons: [
     (addonWaline as (options: ExtendedWalineOptions) => any)({
-      serverURL: 'https://youngsix6.work', 
-      avatar: 'mp', // 头像类型（支持微信/QQ/Gravatar 等，可选值：mp、qq、gravatar 等）
-      requiredMeta: ['nick', 'mail'], // 必填信息（昵称、邮箱，可按需删除）
-      pageSize: 10, // 每页显示的评论数
+      serverURL: 'https://youngsix6.work',
+      avatar: 'mp',
+      requiredMeta: ['nick', 'mail'],
+      pageSize: 10,
       lang: 'zh-CN',
       locale: {
         placeholder: '期待你的回复～'
-    },
+      },
     }),
   ],
 })

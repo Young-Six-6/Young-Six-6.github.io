@@ -21,7 +21,7 @@ export default defineSiteConfig({
       icon: 'i-ri-github-line',
       color: '#6e5494',
     },
-        {
+    {
       name: '网易云音乐',
       link: 'https://music.163.com/#/user/home?id=',
       icon: 'i-ri-netease-cloud-music-line',
@@ -42,7 +42,30 @@ export default defineSiteConfig({
   ],
 
   search: {
-    enable: true, // 已启用搜索功能
+    enable: true, 
+    type: 'fuse', 
+  },
+
+
+  fuse: {
+    options: {
+      keys: ['title', 'excerpt', 'content'], // 搜索字段：标题、摘要、正文
+      threshold: 0, // 匹配阈值，越低越精准（0为完全匹配）
+      ignoreLocation: true, // 忽略位置，支持全文搜索
+    },
+  },
+
+  // 【补充】代码块高度限制，超过300px自动折叠
+  codeHeightLimit: 300,
+
+  statistics: {
+    enable: true,
+    readTime: {
+      speed: {
+        cn: 300,
+        en: 200,
+      },
+    },
   },
 
   sponsor: {
@@ -63,7 +86,13 @@ export default defineSiteConfig({
       },
     ],
   },
-    comment: {
+
+  comment: {
     enable: true
+  },
+
+  // 【可选补充】加密功能（若不需要，可删除此配置）
+  encrypt: {
+    enable: true, // 默认关闭，如需开启改为true
   },
 })
