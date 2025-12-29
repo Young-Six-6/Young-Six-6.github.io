@@ -19,8 +19,7 @@ type ExtendedWalineOptions = WalineOptions & {
  * User Config
  */
 export default defineValaxyConfig<UserThemeConfig>({
-  // site config see site.config.ts
-  base: '/Young-Six-6/',
+
   theme: 'yun',
 
   themeConfig: {

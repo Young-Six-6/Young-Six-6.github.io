@@ -2,7 +2,6 @@ import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
   url: 'https://young-six-6.github.io',
-  base: '/Young-Six-6/',
   lang: 'zh-CN',
   title: '小乌龟的6-Blog',
   subtitle: '', 
@@ -14,7 +13,7 @@ export default defineSiteConfig({
       message: 'Let life be beautiful like summer flowers And Death like autumn leaves.'
     }
   },
-  description: '', // 按你的要求留空，如需补充可改为 "日常记录ing"
+  description: '',
   social: [
     {
       name: 'GitHub',
