@@ -12,11 +12,21 @@
     "serve": "vite preview",
     "deploy": "npm run build:ssg && gh-pages --clean --dist dist"
   },
+  "overrides": {
+    "katex": "0.16.9",
+    "valaxy": {
+      "katex": "0.16.9"
+    },
+    "valaxy-theme-yun": {
+      "katex": "0.16.9"
+    }
+  },
   "dependencies": {
     "@waline/client": "3.4.1",
     "valaxy": "0.26.10",
     "valaxy-addon-waline": "^0.2.1",
-    "valaxy-theme-yun": "0.26.10"
+    "valaxy-theme-yun": "0.26.10",
+    "katex": "0.16.9"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
