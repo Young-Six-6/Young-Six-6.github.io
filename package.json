@@ -12,7 +12,6 @@
     "serve": "vite preview",
     "deploy": "npm run build:ssg && gh-pages --clean --dist dist"
   },
-  // 核心新增：强制所有依赖使用兼容的 katex@0.16.9
   "overrides": {
     "katex": "0.16.9",
     "valaxy": {
@@ -27,7 +26,6 @@
     "valaxy": "0.26.10",
     "valaxy-addon-waline": "^0.2.1",
     "valaxy-theme-yun": "0.26.10",
-    // 显式声明 katex 依赖，确保版本锁定
     "katex": "0.16.9"
   },
   "devDependencies": {
