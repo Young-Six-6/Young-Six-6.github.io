@@ -3,7 +3,6 @@ name: GitHub Pages
 on:
   push:
     branches:
-      # The branch where the project source code resides
       # 项目源代码所在的分支
       - main
       - master
@@ -15,21 +14,37 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [lts/*]
+        # 关键修改1：锁定 Node 版本为 20.x（兼容 katex 的稳定版本）
+        node-version: [20.x]
         os: [ubuntu-latest]
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4  # 升级到最新版，提升稳定性
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4  # 升级到最新版
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.org/
+          cache: 'npm'  # 新增：缓存 npm 依赖，加速构建
+
+      # 关键修改2：清理废弃的 npm 配置，消除警告并避免干扰
+      - name: Clean up deprecated npm config
+        run: |
+          rm -f .npmrc
+          npm config delete shamefully-hoist
+          npm config delete strict-peer-dependencies
+          npm config delete always-auth
 
       - name: 📦 Install Dependencies
         run: npm i
+
+      # 关键修改3：强制安装兼容的 katex 版本，兜底保障
+      - name: Fix katex compatibility issue
+        run: |
+          npm uninstall katex
+          npm install katex@0.16.9 --save
 
       - name: 🌌 Build Valaxy Blog
         run: npm run build
