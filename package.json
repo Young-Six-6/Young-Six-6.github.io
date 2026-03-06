@@ -15,14 +15,19 @@
   "overrides": {
     "katex": "0.16.9",
     "valaxy": {
-      "katex": "0.16.9"
+      "katex": "0.16.9",
+      "vue-router": "4.6.0"
     },
     "valaxy-theme-yun": {
-      "katex": "0.16.9"
+      "katex": "0.16.9",
+      "vue-router": "4.6.0"
     }
   },
   "dependencies": {
     "@waline/client": "3.4.1",
+    "@unocss/reset": "0.58.0",
+    "@unocss/preset-uno": "0.58.0",
+    "vue-router": "4.6.0",
     "valaxy": "0.26.10",
     "valaxy-addon-waline": "^0.2.1",
     "valaxy-theme-yun": "0.26.10",
@@ -30,6 +35,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "5.0.12"
   }
 }

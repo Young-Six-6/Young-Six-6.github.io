@@ -1,8 +1,9 @@
 import type { UserThemeConfig } from 'valaxy-theme-yun'
 import { defineValaxyConfig } from 'valaxy'
 import { addonWaline, type WalineOptions } from 'valaxy-addon-waline'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-// add icons what you will need
 const safelist = [
   'i-ri-home-line',
 ]
@@ -15,9 +16,8 @@ type ExtendedWalineOptions = WalineOptions & {
   lang?: string
 }
 
-/**
- * User Config
- */
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
 export default defineValaxyConfig<UserThemeConfig>({
   theme: 'yun',
 
@@ -55,9 +55,8 @@ export default defineValaxyConfig<UserThemeConfig>({
         icp: 'N/A',
       },
     },
-  }, // 关键1：闭合 themeConfig 大括号（移出 unocss/addons）
+  },
 
-  // 关键2：unocss 移到根级别（与 theme 同级，非 themeConfig 子属性）
   unocss: { safelist },
   addons: [
     (addonWaline as (options: ExtendedWalineOptions) => any)({
@@ -71,4 +70,18 @@ export default defineValaxyConfig<UserThemeConfig>({
       },
     }),
   ],
+
+  build: {
+    base: '/',
+    outDir: 'dist',
+    rollupOptions: {
+      resolve: {
+        alias: {
+          'vue-router': path.resolve(__dirname, './node_modules/vue-router/dist/vue-router.esm-bundler.js')
+        },
+        extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+      },
+      external: []
+    }
+  }
 })

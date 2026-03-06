@@ -100,6 +100,20 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/Hyper-VAttention': RouteRecordInfo<
+      '/posts/Hyper-VAttention',
+      '/posts/Hyper-VAttention',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/wuxianbao': RouteRecordInfo<
+      '/posts/wuxianbao',
+      '/posts/wuxianbao',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/tags/': RouteRecordInfo<
       '/tags/',
       '/tags',
@@ -120,13 +134,13 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.10_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/valaxy-theme-yun/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy@0.26.10_@babel+parse_ef4ed80a3fa88367c6b250d29701ecdd/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -168,13 +182,13 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.10_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.26.10_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
       views:
@@ -183,6 +197,18 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/AboutMe.md': {
       routes:
         | '/posts/AboutMe'
+      views:
+        | never
+    }
+    'pages/posts/Hyper-VAttention.md': {
+      routes:
+        | '/posts/Hyper-VAttention'
+      views:
+        | never
+    }
+    'pages/posts/wuxianbao.md': {
+      routes:
+        | '/posts/wuxianbao'
       views:
         | never
     }
