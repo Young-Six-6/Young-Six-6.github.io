@@ -1,0 +1,49 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "小乌龟的6-Blog",
+    "home_page_url": "https://young-six-6.github.io/",
+    "feed_url": "https://young-six-6.github.io/feed.json",
+    "icon": "https://young-six-6.github.io/author.png",
+    "author": {
+        "name": "Young-Six-6",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "https://young-six-6.github.io/posts/windowsUpdateIsoEdit",
+            "content_html": "<h2>零、所需材料</h2>\n<p>一个windwos10 22H2镜像（理论上其他win镜像同理）<br>\nDism++<br>\nultraiso<br>\nResourceHacker_v5.1.8  （文中简称RH）</p>\n<br/><p>访问 <a href=\"https://young-six-6.github.io/posts/windowsUpdateIsoEdit\" target=\"_blank\">https://young-six-6.github.io/posts/windowsUpdateIsoEdit</a> 阅读全文。</p>",
+            "url": "https://young-six-6.github.io/posts/windowsUpdateIsoEdit",
+            "title": "修改制作一个可爱的Windows安装镜像（一）",
+            "date_modified": "2026-03-07T00:00:00.000Z",
+            "date_published": "2026-03-07T00:00:00.000Z",
+            "author": {
+                "name": "Young-Six-6",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://young-six-6.github.io/posts/Hyper-VAttention",
+            "content_html": "<h2>一、解决方案</h2>\n<div align=\"center\">\n  <img src=\"https://img.cdn1.vip/i/6951db56e0593_1766972246.webp\" \n<br/><p>访问 <a href=\"https://young-six-6.github.io/posts/Hyper-VAttention\" target=\"_blank\">https://young-six-6.github.io/posts/Hyper-VAttention</a> 阅读全文。</p>",
+            "url": "https://young-six-6.github.io/posts/Hyper-VAttention",
+            "title": "Hyper-v尝试连接到服务器xxx错误，请检查虚拟机管理服务是否正在进行......",
+            "date_modified": "2025-12-28T00:00:00.000Z",
+            "date_published": "2025-12-29T00:00:00.000Z",
+            "author": {
+                "name": "Young-Six-6",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "https://young-six-6.github.io/posts/AboutMe",
+            "content_html": "<p>一个严重依赖生成式ai（尤其是Chatgpt）的懒人，没什么水平</p>\n<p><a href=\"https://github.com/Young-Six-6\">GitHub</a></p>\n<hr>\n<p>可能时不时发一些自己喜欢的内容上</p>\n<br/><p>访问 <a href=\"https://young-six-6.github.io/posts/AboutMe\" target=\"_blank\">https://young-six-6.github.io/posts/AboutMe</a> 阅读全文。</p>",
+            "url": "https://young-six-6.github.io/posts/AboutMe",
+            "title": "About Me",
+            "date_modified": "2025-11-28T00:00:00.000Z",
+            "date_published": "2025-11-28T00:00:00.000Z",
+            "author": {
+                "name": "Young-Six-6",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

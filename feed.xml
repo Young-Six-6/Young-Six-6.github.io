@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>小乌龟的6-Blog</title>
+        <link>https://young-six-6.github.io/</link>
+        <description></description>
+        <lastBuildDate>Sat, 07 Mar 2026 02:11:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>小乌龟的6-Blog</title>
+            <url>https://young-six-6.github.io/author.png</url>
+            <link>https://young-six-6.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © Young-Six-6</copyright>
+        <atom:link href="https://young-six-6.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[修改制作一个可爱的Windows安装镜像（一）]]></title>
+            <link>https://young-six-6.github.io/posts/windowsUpdateIsoEdit</link>
+            <guid isPermaLink="false">https://young-six-6.github.io/posts/windowsUpdateIsoEdit</guid>
+            <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>零、所需材料</h2>
+<p>一个windwos10 22H2镜像（理论上其他win镜像同理）<br>
+Dism++<br>
+ultraiso<br>
+ResourceHacker_v5.1.8  （文中简称RH）</p>
+<br/><p>访问 <a href="https://young-six-6.github.io/posts/windowsUpdateIsoEdit" target="_blank">https://young-six-6.github.io/posts/windowsUpdateIsoEdit</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Young-Six-6)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hyper-v尝试连接到服务器xxx错误，请检查虚拟机管理服务是否正在进行......]]></title>
+            <link>https://young-six-6.github.io/posts/Hyper-VAttention</link>
+            <guid isPermaLink="false">https://young-six-6.github.io/posts/Hyper-VAttention</guid>
+            <pubDate>Mon, 29 Dec 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>一、解决方案</h2>
+<div align="center">
+  <img src="https://img.cdn1.vip/i/6951db56e0593_1766972246.webp" 
+<br/><p>访问 <a href="https://young-six-6.github.io/posts/Hyper-VAttention" target="_blank">https://young-six-6.github.io/posts/Hyper-VAttention</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Young-Six-6)</author>
+        </item>
+        <item>
+            <title><![CDATA[About Me]]></title>
+            <link>https://young-six-6.github.io/posts/AboutMe</link>
+            <guid isPermaLink="false">https://young-six-6.github.io/posts/AboutMe</guid>
+            <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p>一个严重依赖生成式ai（尤其是Chatgpt）的懒人，没什么水平</p>
+<p><a href="https://github.com/Young-Six-6">GitHub</a></p>
+<hr>
+<p>可能时不时发一些自己喜欢的内容上</p>
+<br/><p>访问 <a href="https://young-six-6.github.io/posts/AboutMe" target="_blank">https://young-six-6.github.io/posts/AboutMe</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Young-Six-6)</author>
+        </item>
+    </channel>
+</rss>
