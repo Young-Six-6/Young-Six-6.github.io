@@ -107,6 +107,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/windowsUpdateIsoEdit': RouteRecordInfo<
+      '/posts/windowsUpdateIsoEdit',
+      '/posts/windowsUpdateIsoEdit',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/wuxianbao': RouteRecordInfo<
       '/posts/wuxianbao',
       '/posts/wuxianbao',
@@ -203,6 +210,12 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Hyper-VAttention.md': {
       routes:
         | '/posts/Hyper-VAttention'
+      views:
+        | never
+    }
+    'pages/posts/windowsUpdateIsoEdit.md': {
+      routes:
+        | '/posts/windowsUpdateIsoEdit'
       views:
         | never
     }
