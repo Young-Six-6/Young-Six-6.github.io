@@ -760,6 +760,11 @@ resume decode
 小插曲：上午还能播下午就播放不了了（电脑播放器），测试是因为播放器根据md5记住了上一次播放到了xx:xx,点进去直接索引了结尾，播放退出。16进制改一个字节完美播放
 ```
 
+## 后记（新发现在这里  
+
+安卓端十分离谱，在目录/data/user/0/vizpower.imeeting/shared_prefs/登陆网站.xml下有明文存储的记住密码  
+电脑的C:\Users\UserName\AppData\Local\Winupon\Vizpower\logintool_new.ini下，password和password_2是记住密码，初步推测和时间戳和mac地址全无关，正在尝试解密方法  
+
 ## 免责:
 
 出于学习网络安全,拿去干什么的话,纯属个人行为哦
