@@ -1,0 +1,1 @@
+import"./chunks/vue-router.CS2hp4yI.js";import{a8 as o,a9 as t,aa as r,ab as a}from"./framework.DjHeuOUU.js";const c={};function n(s,_){const e=t("RouterView");return r(),a(e)}const i=o(c,[["render",n]]);export{i as default};

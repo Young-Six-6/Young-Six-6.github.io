@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://young-six-6.github.io/sitemap.xml
